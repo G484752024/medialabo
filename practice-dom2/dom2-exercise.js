@@ -17,10 +17,29 @@ let gakka = [
 //////////////// ここから下にプログラムを書きたそう!
 let b =document.querySelector('button#show');
 b.addEventListener('click' , changeDom);
+let i =0;
 
 function changeDom(){
+	if(i !== 0){
+		p.remove();
+	}
 let p = document.createElement('a');
 p.textContent = campus.address;
 let c=document.querySelector('h2#addr');
 c.insertAdjacentElement('afterend', p);
+
+if(i !== 0){
+	u.remove();
+	l.remove();
+}
+
+b =document.querySelector('h2#dept');
+let a =document.createElement('ul');
+b.insertAdjacentElement('afterend' , a);
+for(let i of gakka){
+	let d =document.createElement('li');
+    d.textContent =i.name;
+    a.insertAdjacentElement('beforeend' ,d);
+}
+i++;
 }

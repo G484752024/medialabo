@@ -1,13 +1,24 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-header {
-    background-color: #004466;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    font-family: '游ゴシック', serif;
+    background: linear-gradient(#fdf6e3, #f1e3d3);
+    color: #4b3b2a;
+  }
+  h1 {
+    font-size: 2.5em;
+    color: #5e4638;
+    border-bottom: 2px solid #d9b382;
+  }
+  h2 {
+    color: #9e612f;
+    border-left: 6px solid #d9b382;
+    background: linear-gradient(to bottom right, #deceaf, #be9b6a);
+  }
+  h3{
+    font-size: 2.5em;
+    color: #4b3b2a;
+    margin-top: 1.5em;
+    background-color: #ffffff;
+  }
+  p {
+    font-size: 1.25em;
   }
